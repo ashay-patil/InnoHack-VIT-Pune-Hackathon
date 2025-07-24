@@ -1,0 +1,154 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #1a1f2b, #2e2e3e);
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+/* PDF export-specific styles */
+.pdf-export {
+  color: #000;
+  background-color: white;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.pdf-export h1, .pdf-export h2, .pdf-export h3 {
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pdf-export p {
+  margin-bottom: 12px;
+}
+
+.pdf-export pre, .pdf-export code {
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 8px;
+  border-radius: 4px;
+  overflow-x: auto;
+  display: block;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.pdf-export ul, .pdf-export ol {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.pdf-export li {
+  margin-bottom: 6px;
+}
+/* ends here */
+
+main {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.left, .right {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #1e1e2f !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px !important;
+  overflow: auto !important;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+  color: #e0e0f0;
+  background-color: #12121a;
+  border: 1px solid #3a3a5a;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.review-button {
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.review-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+}
+
+.review-button:active {
+  transform: scale(0.98);
+}
+
+.right {
+  line-height: 2.75 !important;
+  color: #f0f0f0 !important;
+}
+
+.right pre, .right code {
+  font-family: 'Fira Code', monospace;
+  background-color: #12121a !important;
+  color: #f8f8f2 !important;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.download {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(245deg, green, #f7971e);
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 210, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 210, 0, 0.7);
+}
+
+/* Scrollbar Styling */
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 10px;
+}
+
+.left::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 5px;
+}
