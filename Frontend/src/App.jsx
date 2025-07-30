@@ -60,7 +60,7 @@ function App() {
       </div>
       <div className="right">
         <div ref={responseRef}>
-          <ReactMarkdown>{review}</ReactMarkdown>
+          {review ? <ReactMarkdown>{review}</ReactMarkdown>:<div className='Loading'>Loading</div>}
 
         </div>
         {review && !loading && <button onClick={downloadPDF} className='download'>📄 Download Ai's Guidance </button>}
